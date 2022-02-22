@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget{
                 Row(
                     children: [
                       Expanded(
-                        flex: 2,
+                        flex: 5,
                         child: Container(
                           height: 100,
                           width: 100,
