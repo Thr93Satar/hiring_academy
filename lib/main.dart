@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget{
                             ),),
                         ),
                         Expanded(
-                          flex: 6,
+                          flex: 4,
                           child: Container(
                             decoration: const BoxDecoration(
                               color: Colors.red,
@@ -66,20 +66,20 @@ class MyApp extends StatelessWidget{
                   child: Row ( //row 3
                       children: [
                         Expanded(
-                          flex: 3,
+                          flex: 3000,
                           child: Container(
                             decoration: const BoxDecoration(
                               color: Colors.red,
                             ),),
                         ),
                         const Spacer(
-                          flex: 4,
+                          flex: 4000,
                         ),
                         Expanded(
-                          flex: 3,
+                          flex: 3000,
                           child: Container(
                             decoration: const BoxDecoration(
-                              color: Colors.blue,
+                              color: Colors.red,
                             ),
                           ),
                         ),
@@ -88,16 +88,20 @@ class MyApp extends StatelessWidget{
                 ),
                 Expanded(
                   child: Row ( //row 4
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
+                        const Expanded(
+                          child: SizedBox(),
+                        flex: 2500,),
                         Expanded(
-                          flex: 5,
+                          flex: 5000,
                           child: Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 100),
                             decoration: const BoxDecoration(
                               color: Colors.green,
                             ),
                           ),
                         ),
+                        const Expanded(child: SizedBox(),flex: 2500,),
                       ]
                   ),
                 ),
