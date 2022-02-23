@@ -13,55 +13,171 @@ class MyApp extends StatelessWidget{
       home: SafeArea(
         child: Scaffold(
           body: Container(
-            color: Colors.blue.shade100,
+            color: Colors.white,
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: const BoxDecoration(
-                        color: Colors.red,
-                      ),),
-                    ),
-                    Expanded(child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: const BoxDecoration(
-                        color: Colors.blue,
-                      ),
-                    ),)
-                  ]
-                ),
-                Row(
+                Expanded(
+                  child: Row( //row 1
                     children: [
                       Expanded(
-                        flex: 5,
                         child: Container(
-                          height: 100,
-                          width: 100,
-                          decoration: const BoxDecoration(
-                            color: Colors.red,
-                          ),),
-                      ),
-                      Container(
-                        height: 100,
-                        width: 100,
                         decoration: const BoxDecoration(
-                          color: Colors.green,
-                        ),
+                          color: Colors.red,
+                        ),),
                       ),
-                      Container(
-                        height: 100,
-                        width: 100,
+                      Expanded(child: Container(
                         decoration: const BoxDecoration(
-                          color: Colors.green,
+                          color: Colors.blue,
                         ),
-                      ),
+                      ),)
                     ]
+                  ),
                 ),
+                Expanded(
+                  child: Row( //row 2
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.blue,
+                            ),),
+                        ),
+                        Expanded(
+                          flex: 6,
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                      ]
+                  ),
+                ),
+                Expanded(
+                  child: Row ( //row 3
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.red,
+                            ),),
+                        ),
+                        const Spacer(
+                          flex: 4,
+                        ),
+                        Expanded(
+                          flex: 3,
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                      ]
+                  ),
+                ),
+                Expanded(
+                  child: Row ( //row 4
+                      children: [
+                        Expanded(
+                          flex: 5,
+                          child: Container(
+                            margin: const EdgeInsets.symmetric(horizontal: 100),
+                            decoration: const BoxDecoration(
+                              color: Colors.green,
+                            ),
+                          ),
+                        ),
+                      ]
+                  ),
+                ),
+                Expanded(
+                  child: Row (//row 5
+                      children: [
+                        Expanded(
+                          flex: 5,
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.yellow,
+                            ),
+                          ),
+                        ),
+                        const Expanded(
+                          flex: 5,
+                          child: SizedBox(
+                          ),
+                        ),
+                      ]
+                  ),
+                ),
+                Expanded(
+                  child: Row ( //row 6
+                    children: [
+                    Expanded(
+                      flex: 3,
+                      child: Container(
+                        decoration: const BoxDecoration(
+                          color: Colors.red,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 4,
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    flex: 4,
+                                    child: Container(
+                                      decoration: const BoxDecoration(
+                                        color: Colors.blue,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Row (
+                                children: [
+                                  Expanded(
+                                    flex: 4,
+                                    child: Container(
+                                      decoration: const BoxDecoration(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+
+                        )),
+                    Expanded(
+                      flex: 3,
+                      child: Container(
+                        decoration: const BoxDecoration(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    ]
+                  ),
+                )
             ]
         ),
       ),
