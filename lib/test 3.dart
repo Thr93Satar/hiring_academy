@@ -90,9 +90,9 @@ class MyApp extends StatelessWidget{
                     child: Row ( //row 4.1
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          const Expanded(
-                            child: SizedBox(),
-                            flex: 2500,),
+                          const Spacer(
+                            flex: 2500,
+                          ),
                           Expanded(
                             flex: 5000,
                             child: Container(
@@ -101,7 +101,9 @@ class MyApp extends StatelessWidget{
                               ),
                             ),
                           ),
-                          const Expanded(child: SizedBox(),flex: 2500,),
+                          const Spacer(
+                            flex: 2500,
+                          )
                         ]
                     ),
                   ),
