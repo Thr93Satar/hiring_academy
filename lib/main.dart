@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              Column(
+              Column( //-------------------------------------------------------- Slider Content------------------------//
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
@@ -57,45 +57,175 @@ class MyApp extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(
-                          height: 20,
+                          //-------------------------------------------Spacing
+                          height: 10,
                         ),
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 40,
-                            ),
-                            Row(children: [
-                              Stack(
-                                  alignment: Alignment.center,
-                                  children: [
-                                Container(
-                                  decoration: const BoxDecoration(
-                                      color: Colors.red,
-                                      shape: BoxShape.circle),
-                                  width: 80,
-                                  height: 80,
-                                  alignment: Alignment.center,
-                                ),
-                                Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Container(
-                                        child: Icon(Icons.attach_money, size: 20,),
-                                        alignment: Alignment.center,
+                        Expanded( flex: 3,
+                          child: Row ( //row 6
+                              children: [
+                                Expanded(
+                                  flex: 5,
+                                  child: Stack(
+                                    children: [Container(
+                                      decoration: const BoxDecoration(
+                                        color: Colors.red,
+                                        shape: BoxShape.circle,
                                       ),
-                                      Container(
-                                          child: const Text(
-                                        '68',
-                                        textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                            ),
-                                      )),
-                                    ])
-                              ])
-                            ]),
-                          ],
-                        )
+                                    ),
+                                   ]
+                                  ),
+                                ),
+                                Expanded(
+                                    flex: 4,
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Expanded(
+                                                flex: 4,
+                                                child: Container(
+                                                  decoration: const BoxDecoration(
+                                                    color: Colors.blue,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Row (
+                                            children: [
+                                              Expanded(
+                                                flex: 4,
+                                                child: Container(
+                                                  decoration: const BoxDecoration(
+                                                    color: Colors.green,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+
+                                    )),
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ),
+                              ]
+                          ),
+                        ),
+                        const SizedBox(
+                          //-------------------------------------------Spacing
+                          height: 10,
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 300,
+                                decoration: const BoxDecoration(),
+                                child: const Text(
+                                  'Montreal-Based foundry, Pangram, has been a disrupter in the typogtaphy world since 2016',
+                                  textAlign: TextAlign.start,
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.black54,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          //-------------------------------------------Spacing
+                          height: 10,
+                        ),
+                        Expanded(
+                          flex: 2,
+                          //------------------------------------------------------ 3rd card
+                          child: Row(
+                            children: [
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.blue,
+                                    ),
+                                  )),
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.red,
+                                    ),
+                                  )),
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.green,
+                                    ),
+                                  )),
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.yellow,
+                                    ),
+                                  )),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          //-------------------------------------------Spacing
+                          height: 10,
+                        ),
+                        Expanded(
+                          flex: 2,
+                          //------------------------------------------------------ 3rd card
+                          child: Row(
+                            children: [
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.blue,
+                                    ),
+                                  )),
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.red,
+                                    ),
+                                  )),
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.green,
+                                    ),
+                                  )),
+                              Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.yellow,
+                                    ),
+                                  )),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   )
