@@ -64,14 +64,37 @@ class MyApp extends StatelessWidget {
                           child: Row ( //row 6
                               children: [
                                 Expanded(
-                                  flex: 5,
+                                  flex: 4,
                                   child: Stack(
+                                    alignment: Alignment.center,
                                     children: [Container(
                                       decoration: const BoxDecoration(
                                         color: Colors.red,
                                         shape: BoxShape.circle,
                                       ),
                                     ),
+                                    Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: const [
+                                            SizedBox(
+                                                height: 30,
+                                                width: 20,
+                                                child: Icon(
+                                                  Icons.attach_money,
+                                                  size: 25,
+                                                )),
+                                            SizedBox(
+                                              height: 28,
+                                              width: 30,
+                                              child: Text(
+                                                '68',
+                                                style: TextStyle(
+                                                  fontSize: 25,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                          ])
                                    ]
                                   ),
                                 ),
