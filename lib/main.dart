@@ -15,103 +15,93 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Column(children: [
           Expanded(
-            child: Stack(
-              children: [
-                Expanded(
-                  child: Column (
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: Row(
+            child: Stack(children: [
+              Column(
+                children: [
+                  SizedBox(
+                    child: Image.asset(
+                      'assets/pexels-timothy-paule-ii-2002717.jpg',
+                      fit: BoxFit.fitWidth,
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    height: 350,
+                    width: double.infinity,
+                    decoration: const BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(20),
+                            topLeft: Radius.circular(20))),
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          // -----------------------------------------------------first row
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Expanded(
-                              child: Container (
-                                decoration: BoxDecoration(
-                                  color: Colors.yellow,
-                                  borderRadius: BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20))
-                                ),
-                                child: Expanded( //-------------------------------------------------First Card----------------------------------
-                                  child: Row (
-                                      children: [
-                                        Expanded(
-                                          flex: 3,
-                                          child: Container(
-                                            decoration: const BoxDecoration(
-                                              color: Colors.red,
-                                            ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                            flex: 4,
-                                            child: Column(
-                                              children: [
-                                                Expanded(
-                                                  child: Row(
-                                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                                    children: [
-                                                      Expanded(
-                                                        flex: 4,
-                                                        child: Container(
-                                                          decoration: const BoxDecoration(
-                                                            color: Colors.blue,
-                                                          ),
-                                                        ),
-                                                      )
-                                                    ],
-                                                  ),
-                                                ),
-                                                Expanded(
-                                                  child: Row (
-                                                    children: [
-                                                      Expanded(
-                                                        flex: 4,
-                                                        child: Container(
-                                                          decoration: const BoxDecoration(
-                                                            color: Colors.green,
-                                                          ),
-                                                        ),
-                                                      )
-                                                    ],
-                                                  ),
-                                                )
-                                              ],
-
-                                            )),
-                                        Expanded(
-                                          flex: 3,
-                                          child: Container(
-                                            decoration: const BoxDecoration(
-                                              color: Colors.black,
-                                            ),
-                                          ),
-                                        ),
-                                      ]
-                                  ),
-                                ),
-                              ),
-                            ) //---------------------------------------------------------End of first Card
+                            Container(
+                              width: 60,
+                              height: 10,
+                              decoration: const BoxDecoration(
+                                  color: Colors.black38,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(25))),
+                            )
                           ],
                         ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Row(
+                        const SizedBox(
+                          height: 20,
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-                // SizedBox(
-                //   height: 400,
-                //   width: double.infinity,
-                //   child: Image.asset(
-                //     'assets/pexels-timothy-paule-ii-2002717.jpg',
-                //     fit: BoxFit.fitWidth,
-                //     alignment: Alignment.topCenter,
-                //   ),
-                // ),
-              ],
-            ),
+                        Row(
+                          children: [
+                            const SizedBox(
+                              width: 40,
+                            ),
+                            Row(children: [
+                              Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                Container(
+                                  decoration: const BoxDecoration(
+                                      color: Colors.red,
+                                      shape: BoxShape.circle),
+                                  width: 80,
+                                  height: 80,
+                                  alignment: Alignment.center,
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Container(
+                                        child: Icon(Icons.attach_money, size: 20,),
+                                        alignment: Alignment.center,
+                                      ),
+                                      Container(
+                                          child: const Text(
+                                        '68',
+                                        textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                            ),
+                                      )),
+                                    ])
+                              ])
+                            ]),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              )
+            ]),
           )
         ]),
       ),
