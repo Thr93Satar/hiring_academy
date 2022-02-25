@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
                               decoration: const BoxDecoration(
                                   color: Colors.black38,
                                   borderRadius:
-                                      BorderRadius.all(Radius.circular(25))),
+                                  BorderRadius.all(Radius.circular(25))),
                             )
                           ],
                         ),
@@ -67,100 +67,100 @@ class MyApp extends StatelessWidget {
                           flex: 3,
                           child: Row(//row 6
                               children: [
-                            Expanded(
-                              flex: 4,
-                              child:
+                                Expanded(
+                                  flex: 4,
+                                  child:
                                   Stack(alignment: Alignment.center, children: [
-                                Container(
-                                  decoration: const BoxDecoration(
-                                    color: Colors.orangeAccent,
-                                    shape: BoxShape.circle,
-                                  ),
-                                ),
-                                Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: const [
-                                      SizedBox(
-                                          height: 30,
-                                          width: 20,
-                                          child: Icon(
-                                            Icons.attach_money,
-                                            size: 25,
-                                          )),
-                                      SizedBox(
-                                        height: 28,
-                                        width: 30,
-                                        child: Text(
-                                          '68',
-                                          style: TextStyle(
-                                            fontSize: 25,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ),
-                                    ])
-                              ]),
-                            ),
-                            Expanded(
-                                flex: 4,
-                                child: Column(
-                                  children: [
-                                    Expanded(
-                                      child: Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.end,
-                                        children: [
-                                          Expanded(
-                                            flex: 4,
-                                            child: Container(
-                                              decoration: const BoxDecoration(),
-                                              child: const Text(
-                                                'PP-0008',
-                                                style: TextStyle(
-                                                  fontSize: 22,
-                                                  fontWeight: FontWeight.w900,
-                                                ),
-                                              ),
-                                            ),
-                                          )
-                                        ],
+                                    Container(
+                                      decoration: const BoxDecoration(
+                                        color: Colors.orangeAccent,
+                                        shape: BoxShape.circle,
                                       ),
                                     ),
-                                    Expanded(
-                                      child: Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        children: [
-                                          Expanded(
-                                            flex: 4,
-                                            child: Container(
-                                              decoration: const BoxDecoration(),
-                                              child: const Text(
-                                                'Free Shipping',
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  color: Colors.black45,
-                                                ),
+                                    Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: const [
+                                          SizedBox(
+                                              height: 30,
+                                              width: 20,
+                                              child: Icon(
+                                                Icons.attach_money,
+                                                size: 25,
+                                              )),
+                                          SizedBox(
+                                            height: 28,
+                                            width: 30,
+                                            child: Text(
+                                              '68',
+                                              style: TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                )),
-                            Expanded(
-                              flex: 3,
-                              child: Container(
-                                decoration: const BoxDecoration(),
-                                child: const Icon(
-                                  Icons.favorite,
-                                  color: Colors.orangeAccent,
-                                  size: 30,
+                                          ),
+                                        ])
+                                  ]),
                                 ),
-                              ),
-                            ),
-                          ]),
+                                Expanded(
+                                    flex: 4,
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Row(
+                                            crossAxisAlignment:
+                                            CrossAxisAlignment.end,
+                                            children: [
+                                              Expanded(
+                                                flex: 4,
+                                                child: Container(
+                                                  decoration: const BoxDecoration(),
+                                                  child: const Text(
+                                                    'PP-0008',
+                                                    style: TextStyle(
+                                                      fontSize: 22,
+                                                      fontWeight: FontWeight.w900,
+                                                    ),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Row(
+                                            crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                            children: [
+                                              Expanded(
+                                                flex: 4,
+                                                child: Container(
+                                                  decoration: const BoxDecoration(),
+                                                  child: const Text(
+                                                    'Free Shipping',
+                                                    style: TextStyle(
+                                                      fontSize: 18,
+                                                      color: Colors.black45,
+                                                    ),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    )),
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    decoration: const BoxDecoration(),
+                                    child: const Icon(
+                                      Icons.favorite,
+                                      color: Colors.orangeAccent,
+                                      size: 30,
+                                    ),
+                                  ),
+                                ),
+                              ]),
                         ),
                         const SizedBox(
                           //-------------------------------------------Spacing
@@ -214,16 +214,16 @@ class MyApp extends StatelessWidget {
                                       ),
                                       child: Center(
                                           child: Text(
-                                        entries[index],
-                                        style: const TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 18),
-                                      )),
+                                            entries[index],
+                                            style: const TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18),
+                                          )),
                                     );
                                   },
                                   separatorBuilder:
                                       (BuildContext context, int index) =>
-                                          const Divider(),
+                                  const Divider(),
                                 ),
                               ),
                             ],
@@ -244,16 +244,16 @@ class MyApp extends StatelessWidget {
                               Expanded(
                                   flex: 1,
                                   child: Container(
-                                    child: ElevatedButton(
-                                      onPressed: () {},
-                                      child: const Icon(Icons.remove, color: Colors.white),
-                                      style: ElevatedButton.styleFrom(
-                                        shape: const CircleBorder(),
-                                        padding: const EdgeInsets.all(10),
-                                        primary: Colors.orangeAccent, // <-- Button color
-                                        onPrimary: Colors.red, // <-- Splash color
-                                      ),
-                                    )
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        child: const Icon(Icons.remove, color: Colors.white),
+                                        style: ElevatedButton.styleFrom(
+                                          shape: const CircleBorder(),
+                                          padding: const EdgeInsets.all(10),
+                                          primary: Colors.orangeAccent, // <-- Button color
+                                          onPrimary: Colors.red, // <-- Splash color
+                                        ),
+                                      )
                                   )),
                               Expanded(
                                   flex: 1,
@@ -285,7 +285,7 @@ class MyApp extends StatelessWidget {
                               Expanded(
                                   flex: 4,
                                   child: Container(
-                                    height: 50,
+                                      height: 50,
                                       child: ElevatedButton(
                                         onPressed: () {},
                                         child: Text('Add to Cart', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),
