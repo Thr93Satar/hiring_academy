@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    height: 700,
+                    height: 650,
                     decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
@@ -134,7 +134,7 @@ class MyApp extends StatelessWidget {
                               ],
                             ),
                             const SizedBox(
-                              height: 10,
+                              height: 20,
                             ),
                             Expanded(
                               flex: 1,
@@ -215,7 +215,7 @@ class MyApp extends StatelessWidget {
                                   Expanded(
                                     flex: 2,
                                     child: Padding(
-                                      padding: const EdgeInsets.all(15.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: Container(
                                         alignment: Alignment.center,
                                         decoration: const BoxDecoration(
@@ -257,6 +257,9 @@ class MyApp extends StatelessWidget {
                                   )
                                 ],
                               ),
+                            ),
+                            const SizedBox(
+                              height: 15,
                             ),
                             Expanded(
                               flex: 1,
@@ -398,100 +401,189 @@ class MyApp extends StatelessWidget {
                                             ])),
                                   ),
                                   Expanded(
-                                    flex: 1,
+                                      flex: 1,
                                       child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.start,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
                                           children: const [
-                                    SizedBox(
-                                      child: Text(
-                                        '250K ',
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.orange,
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 120,
-                                      child: Text(
-                                        'People are Joined',
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          color: Colors.black45,
-                                        ),
-                                      ),
-                                    ),
-                                  ])),
+                                            SizedBox(
+                                              child: Text(
+                                                '250K ',
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.orange,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 120,
+                                              child: Text(
+                                                'People are Joined',
+                                                style: TextStyle(
+                                                  fontSize: 14,
+                                                  fontWeight: FontWeight.w600,
+                                                  color: Colors.black45,
+                                                ),
+                                              ),
+                                            ),
+                                          ])),
                                   const SizedBox(
                                     width: 15,
                                   ),
                                 ],
                               ),
                             ),
+                            const SizedBox(
+                              height: 15,
+                            ),
                             Expanded(
-                              flex: 1,
+                              flex: 2,
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Container(
-                                    width: 300,
-                                    decoration: const BoxDecoration(),
-                                    child: const Text(
-                                      'Montreal-Based foundry, Pangram @ Pangram, has been a disrupter in the typogtaphy world since 2016 .',
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        height: 1.4,
-                                        fontSize: 18,
-                                        color: Colors.black54,
-                                      ),
-                                    ),
+                                  const SizedBox(
+                                    width: 22,
                                   ),
+                                  Expanded(
+                                    child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          const Text(
+                                            'Description:',
+                                            textAlign: TextAlign.start,
+                                            style: TextStyle(
+                                              height: 1.4,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                              color: Colors.black,
+                                            ),
+                                          ),
+                                          Stack(
+                                            alignment: Alignment.bottomRight,
+                                            children: const [
+                                              Text(
+                                                'A Chinatown is an ethnic enclave of Chinese people\n'
+                                                'located outside mainland China, Hong Kong,Macau,\nSingapore,',
+                                                textAlign: TextAlign.justify,
+                                                overflow: TextOverflow.clip,
+                                                style: TextStyle(
+                                                  height: 1.6,
+                                                  fontSize: 12,
+                                                  color: Colors.black54,
+                                                ),
+                                              ),
+                                              const SizedBox(
+                                                child: const Text(
+                                                  'Read More',
+                                                  textAlign: TextAlign.start,
+                                                  style: TextStyle(
+                                                    height: 1.4,
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.orange,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ]),
+                                  )
                                 ],
                               ),
                             ),
-                            Expanded(
-                              flex: 1,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 300,
-                                    decoration: const BoxDecoration(),
-                                    child: const Text(
-                                      'Montreal-Based foundry, Pangram @ Pangram, has been a disrupter in the typogtaphy world since 2016 .',
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        height: 1.4,
-                                        fontSize: 18,
-                                        color: Colors.black54,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            const SizedBox(
+                              height: 15,
                             ),
                             Expanded(
-                              flex: 1,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 300,
-                                    decoration: const BoxDecoration(),
-                                    child: const Text(
-                                      'Montreal-Based foundry, Pangram @ Pangram, has been a disrupter in the typogtaphy world since 2016 .',
-                                      textAlign: TextAlign.start,
-                                      style: TextStyle(
-                                        height: 1.4,
-                                        fontSize: 18,
-                                        color: Colors.black54,
-                                      ),
+                              flex: 2,
+                              child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: const [
+                                        SizedBox(width: 22),
+                                        Text(
+                                          'Total Price :',
+                                          style: TextStyle(
+                                            height: 1.4,
+                                            fontSize: 14,
+                                            color: Colors.black54,
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                  ),
-                                ],
-                              ),
-                            ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        const SizedBox(
+                                          width: 18,
+                                        ),
+                                        const SizedBox(
+                                            width: 15,
+                                            child: Icon(
+                                              Icons.attach_money,
+                                              size: 20,
+                                            )),
+                                        Row(
+                                          children: const [
+                                            SizedBox(
+                                              width: 50,
+                                              child: Text(
+                                                '100',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.orange,
+                                                  fontSize: 18,
+                                                  height: 1.5,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 50,
+                                              child: Text(
+                                                '/Person',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.orange,
+                                                  fontSize: 12,
+                                                  height: 1.5,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          width: 70,
+                                        ),
+                                        SizedBox(
+                                            height: 50,
+                                            child: ElevatedButton(
+                                              onPressed: () {},
+                                              child: const Text(
+                                                'Get a Ticket',
+                                                style: TextStyle(fontSize: 14),
+                                              ),
+                                              style: ButtonStyle(
+                                                backgroundColor:
+                                                    MaterialStateProperty.all(
+                                                        Colors.orange),
+                                                shape:
+                                                    MaterialStateProperty.all(
+                                                        RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(20),
+                                                ) // <-- Radius
+                                                        ),
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ]),
+                            )
                           ],
                         ),
                       ),
