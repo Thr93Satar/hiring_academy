@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    height: 650,
+                    height: 750,
                     decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
