@@ -1,8 +1,4 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +9,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> entries = <String>['XS', 'XL', '11', 'SE', '12', '14'];
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
@@ -158,6 +153,7 @@ class MyApp extends StatelessWidget {
                                                     child: const Text(
                                                       'Festival ChinaTown',
                                                       style: TextStyle(
+                                                        fontFamily: 'Cabin',
                                                         fontSize: 20,
                                                         fontWeight:
                                                             FontWeight.w900,
@@ -473,8 +469,8 @@ class MyApp extends StatelessWidget {
                                                   color: Colors.black54,
                                                 ),
                                               ),
-                                              const SizedBox(
-                                                child: const Text(
+                                               SizedBox(
+                                                child: Text(
                                                   'Read More',
                                                   textAlign: TextAlign.start,
                                                   style: TextStyle(
@@ -556,7 +552,7 @@ class MyApp extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 70,
                                         ),
                                         SizedBox(
