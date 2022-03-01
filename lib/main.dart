@@ -12,12 +12,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> entries = <String>['XS', 'XL', '11', 'SE', '12', '14'];
     return MaterialApp(
       home: Scaffold(
-        body: Column(children: [
-
-        ]),
+        appBar: AppBar(
+        backgroundColor: const Color(0x0fffffff),
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.menu, color: Color(0xFF000000),), onPressed: () {  },
+        ),
+        ),
+        body: SafeArea(
+          child: Column(
+            children: [
+            ],
+          ),
+        )
       ),
     );
   }
