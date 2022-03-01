@@ -25,7 +25,7 @@ class _MyApp1State extends State<MyApp1> {
   int bmcI = 0;
   @override
   Widget build(BuildContext context) {
-    final List<String> entries = <String>['XS', 'XL', '11', 'SE', '12', '14'];
+    final List<String> entries = <String>['XS', 'XL', '12', 'SE', '12', '14'];
     List<Widget> mylist= [
 
         Column(children: [
